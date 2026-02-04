@@ -1,4 +1,5 @@
 const http = require("http");
+const fs = require("fs")
 const PORT = 3000
 const app = http.createServer((req , res) => {
 	const parsedUrl = new URL(req.url, "http://" + req.headers.host)
@@ -6,6 +7,7 @@ const app = http.createServer((req , res) => {
 	if (req.method == "GET") {
 		if (parsedUrl.pathname == "/health") {
 			res.statusCode = 200;
+			fs.appendFileSync("/app/data/app.txt", "Visited\n")
 			res.end("Server number "+ parsedUrl.searchParams.get("no") + " is healthy")
 		}
 		else {
