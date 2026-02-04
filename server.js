@@ -8,7 +8,7 @@ const app = http.createServer((req , res) => {
 		if (parsedUrl.pathname == "/health") {
 			res.statusCode = 200;
 			fs.appendFileSync("/app/data/app.txt", "Visited\n")
-			res.end("Server number "+ parsedUrl.searchParams.get("no") + " is healthy")
+			res.end("Server number "+ parsedUrl.searchParams.get("no") + " is healthy\n")
 		}
 		else {
 			res.statusCode = 404

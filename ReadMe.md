@@ -29,3 +29,21 @@
 - Containerization of a Node.js backend app
 - Backend apps listen on ports; Docker forwards traffic
 - `EXPOSE` documents ports but does not publish them
+
+## Day 2 - Docker Volumes and container shell
+
+### Topics Covered
+
+- what is volumes in docker and their uses
+- Containers are ephemeral; volumes are required for persistence
+- Types of volumes and their perfect use cases
+- Working with bind mount (live code sync during development)
+- Working with named volumes (data persistence across container restarts)
+- Anonymous volumes in Docker (-v /app/node_modules)
+  (protect dependencies from being overwritten by bind mounts)
+- testing out live volumes for dev
+- exec command in container
+- debug why container is not running with the help of logs
+- dangling images (unused / old image layers)
+- Intro to Docker Compose
+  (solves long docker run commands, makes multi-container setups reproducible)
