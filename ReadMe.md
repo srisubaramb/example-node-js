@@ -47,3 +47,16 @@
 - dangling images (unused / old image layers)
 - Intro to Docker Compose
   (solves long docker run commands, makes multi-container setups reproducible)
+
+## Day 3 – MongoDB + Node.js
+
+### Topics Covered
+
+- MongoDB architecture basics (database, collections, documents)
+- Connecting MongoDB with Node.js
+- MongoDB tools: MongoDB Driver, mongosh, MongoDB Compass
+- Asynchronous database operations in Node.js
+- MongoDB URI (connection string) and its importance
+- Module system in Node.js (CommonJS vs ESM)
+- Working with file paths in Node.js
+- Basic MongoDB CRUD operations (insert, find, update, delete)
