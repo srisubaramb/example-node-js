@@ -60,3 +60,16 @@
 - Module system in Node.js (CommonJS vs ESM)
 - Working with file paths in Node.js
 - Basic MongoDB CRUD operations (insert, find, update, delete)
+
+## Day 4 - Docker Compose 
+
+### Topics covered
+
+- Basics of Docker Compose (services, volumes, networks)
+- Creating docker-compose.yml to run multiple containers
+- Using environment variables for configuration
+- Persisting MongoDB data using named volumes
+- Connecting containers using service names instead of localhost
+- Debugging using container logs
+- Basic usage of Multipass shell
+- Built and debugged a multi-container Node.js + MongoDB application using Docker Compose with persistent storage

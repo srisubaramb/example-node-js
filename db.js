@@ -1,6 +1,9 @@
 const {MongoClient} = require('mongodb')
 
-const uri = "mongodb://localhost:27017";
+const uri = process.env.MONGODB_URI;
+if (!uri) {
+	throw new Error("Mongo DB URI not found")
+}
 const client = new MongoClient(uri)
 let db;
 async function connectDB() {
